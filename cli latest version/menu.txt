@@ -1,0 +1,4 @@
+Chicken Burger Combo|880|With Fries & Pepsi|https://marrybrown.com/wp-content/uploads/2019/08/chicken-burger.png
+Hotouch Burger Combo|1110|With Fries & Pepsi|https://marrybrown.com/wp-content/uploads/2019/08/hotouch-burger.png
+Tower Burger Combo|1380|With Fries & Pepsi|https://marrybrown.com/wp-content/uploads/2019/08/Burger-Meal-Tower-Burger-Combo.png
+Nasi Marrybrown|990|Fried chicken and rice|http://marrybrown.com/wp-content/uploads/2019/08/Local-Delight-Nasi-Lemak.png
