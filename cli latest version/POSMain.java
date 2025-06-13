@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class POSMain {
     private static Scanner scanner = new Scanner(System.in);
     private static int orderIDCounter = 1001;
@@ -11,8 +12,17 @@ public class POSMain {
 
     public static void main(String[] args) {
         Menu menu = new Menu();
-        for (MenuItem item : MenuInitializer.getAllMenuItems()) {
-            menu.addItem(item);
+        MenuStorage.loadMenuFromFile(menu, "menu.txt");
+
+        System.out.print("Edit menu items? (y/n): ");
+        if (scanner.nextLine().equalsIgnoreCase("y")) {
+            System.out.print("Enter admin password: ");
+            if (admin.checkAuthentication(scanner.nextLine())) {
+                MenuEditor.editMenu(menu, scanner);
+                MenuStorage.saveMenuToFile(menu, "menu.txt");
+            } else {
+                System.out.println("Incorrect password.");
+            }
         }
 
         System.out.println("=== Welcome to the CLI POS System ===");
@@ -42,6 +52,9 @@ public class POSMain {
             System.out.print("Create new order? (y/n): ");
             if (!scanner.nextLine().equalsIgnoreCase("y")) break;
         }
+
+        // Persist menu items on exit
+        MenuStorage.saveMenuToFile(menu, "menu.txt");
 
         System.out.println("Thank you for using the CLI POS System. Goodbye!");
     }
