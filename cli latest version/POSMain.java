@@ -21,6 +21,11 @@ public class POSMain {
             Order currentOrder = createNewOrder();
             addItemsToOrder(menu, currentOrder);
 
+            System.out.print("Edit order items? (y/n): ");
+            if (scanner.nextLine().equalsIgnoreCase("y")) {
+                OrderEditor.editOrder(currentOrder, scanner);
+            }
+
             System.out.print("Enter payment method (e.g., Cash, Card): ");
             currentOrder.setPaymentMethod(scanner.nextLine());
 

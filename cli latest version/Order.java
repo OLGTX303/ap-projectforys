@@ -24,6 +24,26 @@ public class Order {
         total += item.getMenuItem().getPrice() * item.getQuantity();
     }
 
+    public void updateItemQuantity(int index, int quantity) {
+        if (index < 0 || index >= orderItems.size()) return;
+        OrderItem current = orderItems.get(index);
+        orderItems.set(index, new OrderItem(current.getMenuItem(), quantity, current.getSideOrders()));
+        recalculateTotal();
+    }
+
+    public void removeItem(int index) {
+        if (index < 0 || index >= orderItems.size()) return;
+        orderItems.remove(index);
+        recalculateTotal();
+    }
+
+    private void recalculateTotal() {
+        total = 0;
+        for (OrderItem i : orderItems) {
+            total += i.getMenuItem().getPrice() * i.getQuantity();
+        }
+    }
+
     public void saveReceiptToFile() {
         try (FileWriter writer = new FileWriter("receipt_order_" + orderID + ".txt")) {
             writer.write("Receipt - Order ID: " + orderID + "\nDate: " + date + "\nCustomer: " + customerInfo.getCustomerName() + "\n\nItems:\n");
