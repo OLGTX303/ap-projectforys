@@ -90,10 +90,23 @@ public class POSMain {
                 System.out.printf("%d. %s - RM %.2f (%s)\n", i + 1, item.getName(), item.getPrice() / 100.0, item.getDescription());
             }
 
-            System.out.print("Select item number (0 to finish): ");
+            System.out.print("Select item number (0 to finish, Ctrl+B to edit menu): ");
+            String input = scanner.nextLine();
+
+            if ("\u0002".equals(input)) {
+                System.out.print("Enter admin password: ");
+                if (admin.checkAuthentication(scanner.nextLine())) {
+                    MenuEditor.editMenu(menu, scanner);
+                    MenuStorage.saveMenuToFile(menu, "menu.txt");
+                } else {
+                    System.out.println("Incorrect password.");
+                }
+                continue;
+            }
+
             int choice;
             try {
-                choice = Integer.parseInt(scanner.nextLine());
+                choice = Integer.parseInt(input);
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input.");
                 continue;
