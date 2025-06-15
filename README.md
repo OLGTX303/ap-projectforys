@@ -72,6 +72,177 @@
 | `Drink` | Inherits `MenuItem`, specific to drink-type items. |
 
 ---
+# 🍽️ Java Restaurant System - CLI Guide
+
+Welcome to the **Java Restaurant System** – a command-line interface (CLI) based food ordering system for customers and administrators.
+
+---
+
+## 🧾 Sample Menu Items (from `marrybrown_menu.txt`)
+
+```
+1. Chicken Burger (Single) (Food) - RM4.85  
+2. Lucky Plate (Combo) (Food) - RM11.90  
+3. White Coffee (Drink) - RM3.25  
+```
+
+---
+
+## 🔑 Main Menu Options
+
+You will see this after launching the app:
+
+```
+Main Menu:
+1. View Menu
+2. Search Dish
+3. Place Order
+4. Checkout and Print Receipt
+5. Admin Login (for Cashier Functions)
+6. Exit
+```
+
+---
+
+### 1️⃣ View Menu
+
+**Input:**
+```
+Please enter your choice (1–6): 1
+```
+
+**Output:**
+```
+--- Today's Menu ---
+1. Chicken Burger (Single) (Food) - RM4.85  
+2. Lucky Plate (Combo) (Food) - RM11.90  
+3. White Coffee (Drink) - RM3.25  
+```
+
+---
+
+### 2️⃣ Search Dish
+
+**Input:**
+```
+Please enter your choice (1–6): 2
+Enter Dish Name to Search: coffee
+```
+
+**Output:**
+```
+Search Results:
+1. White Coffee (Drink) - RM3.25
+```
+
+---
+
+### 3️⃣ Place Order
+
+**Input:**
+```
+Please enter your choice (1–6): 3
+Enter your name: Sarah Lee  
+Enter phone number: 019-1190089  
+Enter address: 210-L21, KTHO, UTM JB.
+```
+
+System displays menu. Then:
+
+```
+Enter dish numbers and quantities (e.g., 1x2,3x1): 1x1,2x2,3x1
+```
+
+**Output:**
+```
+Order Summary:
+- Chicken Burger (Single) x1 = RM4.85  
+- Lucky Plate (Combo) x2 = RM23.80  
+- White Coffee x1 = RM3.25  
+Total: RM31.90
+```
+
+---
+
+### 4️⃣ Checkout and Print Receipt
+
+**Input:**
+```
+Please enter your choice (1–6): 4  
+Proceed to checkout? (Y/N): Y  
+Payment Method (Cash/Card/QR Pay/FPX Transfer): COD
+```
+
+**Output:**
+```
+Order ID: 1  
+Customer Name: Sarah Lee  
+Phone: 019-1190089  
+Address: 210-L21, KTHO, UTM JB.  
+Date: 2025-03-30  
+Time: 11:30 AM  
+
+Order Items:
+1. Chicken Burger (Single) - 1 x RM 4.85  
+2. Lucky Plate (Combo) - 2 x RM 11.90  
+3. White Coffee - 1 x RM 3.25  
+
+Total Amount: RM 31.90  
+Payment Method: COD  
+Receipt saved to receipt_1.txt
+```
+
+---
+
+### 5️⃣ Admin Login
+
+**Input:**
+```
+Please enter your choice (1–6): 5  
+Enter Admin Password: admin123
+```
+
+**Admin Menu:**
+```
+1. Add Menu Item  
+2. Remove Menu Item  
+3. Edit Menu Item  
+4. View Sales Report  
+5. Logout  
+```
+
+Example: View Sales Report (`4`)
+
+**Output:**
+```
+--- Sales Report ---
+Chicken Burger (Single) - Sold: 1  
+Lucky Plate (Combo) - Sold: 2  
+White Coffee - Sold: 1  
+```
+
+---
+
+### 6️⃣ Exit
+
+**Input:**
+```
+Please enter your choice (1–6): 6
+```
+
+**Output:**
+```
+Exiting the Java Restaurant System. Goodbye!
+```
+
+---
+
+## 📁 File Outputs
+
+- `receipt_1.txt`, `receipt_2.txt`, ... stored in working directory
+- `orders.ser` stores persisted orders
+
+---
 
 ## ✅ Status
 
