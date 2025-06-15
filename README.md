@@ -14,14 +14,14 @@
 | Alfred Chin Zhan Hoong | A24CS0224 |
 | Lee Ming Da        | A24CS0317   |
 | Gan Rui En         | A24CS0249   |
-| Zuo Boyu           | A24CS4045   |
+| ZUO BOYU           | A24CS4045   |
 
 ---
 
 ## 📌 Table of Contents
 
 1. [Timeline & Milestones](#calendar-timeline--milestones)
-2. [Association Diagram]([#link-association-diagram](https://img.plantuml.biz/plantuml/svg/ZLRRZjem47r7uXyiNafRiUg-eXLQj6YbbGfTYVw0YGUmIEpKdkmgQlVVwpZnBPYgF02PyPoPCtF6yAYHAcogSZgPJZwH3Hov048F6XKja1GbrPfiGJGl2DLqSiD1VaydnBmMHD0AbcIFYekJizMA5yR81JeB0rqeNYEN8ZtybMZ0dS6OVrwIDybPP7xjO3BsJG0RUqy1BCroYk1yNTOyGXiLTvRlMyf5npla-kXxjsyEjYkWYJn6FUjRzImb2sqwcgUNJORxitLaU8mT7mvuOn0k0PbrZrdeJU_9O5zvB2C_t8S_YuMjVsopSJtv7ug1iXvRbIikc7s1rG2nZ5hKUturL237Df6AvWmiYbwIxrpZWujQEG8Lu5coEROr60BTnq0W99zzkxlxCYEBnSfzzKIMKOOR8Q7EZkbJer5Me5AYtkfv5eEbcqN4nvbtkKKvIm4xcPodZ2dGEZFF9vyWinHFKPhSBlMPCfvrdo-ZaZJVrJwDCrulNCYPhboKqWLzHAhAA2fqMTg1vLly8ewcbwuklo0KJUCtvZt5C0Ds4lCgMBaZA96MIPAQjaR9kBNY6xCrGzl1kuMPUx1HHxce6_IdHax6TLtIrlhsJLLHrMOciYxBNhYTBrJkDqFJDmW7uk1IKfRt6DYV7TazBK6FPgM1gk8yn5sWVJUTSzJp5HnvYQ2627ElcWTE_nt2e0Jiovx7qnrBLIeSS0zjX1XTO7udP_V9xjkmOTUJg-4-kCE-TzkVIj1Ql09v99p_kfjydxTIuwkicvBswlDJZ63yJNpxGbgpYekqGcfDlaHQ6sCyB5T4SORYicxmR9JC2vh-XDhKZo2O_NVm5m00))
+2. [Association Diagram](#link-association-diagram)
 3. [Class Descriptions](#blue_book-class-descriptions)
 
 ---
@@ -43,13 +43,14 @@
 ## 🔗 Association Diagram
 
 > _Refer to the visual diagram showing class relationships and member access types._
+![Association Diagram](https://img.plantuml.biz/plantuml/svg/ZLRRZjem47r7uXyiNafRiUg-eXLQj6YbbGfTYVw0YGUmIEpKdkmgQlVVwpZnBPYgF02PyPoPCtF6yAYHAcogSZgPJZwH3Hov048F6XKja1GbrPfiGJGl2DLqSiD1VaydnBmMHD0AbcIFYekJizMA5yR81JeB0rqeNYEN8ZtybMZ0dS6OVrwIDybPP7xjO3BsJG0RUqy1BCroYk1yNTOyGXiLTvRlMyf5npla-kXxjsyEjYkWYJn6FUjRzImb2sqwcgUNJORxitLaU8mT7mvuOn0k0PbrZrdeJU_9O5zvB2C_t8S_YuMjVsopSJtv7ug1iXvRbIikc7s1rG2nZ5hKUturL237Df6AvWmiYbwIxrpZWujQEG8Lu5coEROr60BTnq0W99zzkxlxCYEBnSfzzKIMKOOR8Q7EZkbJer5Me5AYtkfv5eEbcqN4nvbtkKKvIm4xcPodZ2dGEZFF9vyWinHFKPhSBlMPCfvrdo-ZaZJVrJwDCrulNCYPhboKqWLzHAhAA2fqMTg1vLly8ewcbwuklo0KJUCtvZt5C0Ds4lCgMBaZA96MIPAQjaR9kBNY6xCrGzl1kuMPUx1HHxce6_IdHax6TLtIrlhsJLLHrMOciYxBNhYTBrJkDqFJDmW7uk1IKfRt6DYV7TazBK6FPgM1gk8yn5sWVJUTSzJp5HnvYQ2627ElcWTE_nt2e0Jiovx7qnrBLIeSS0zjX1XTO7udP_V9xjkmOTUJg-4-kCE-TzkVIj1Ql09v99p_kfjydxTIuwkicvBswlDJZ63yJNpxGbgpYekqGcfDlaHQ6sCyB5T4SORYicxmR9JC2vh-XDhKZo2O_NVm5m00)
 
 | Icon | Description     |
 |------|-----------------|
-| `-`  | private         |
-| `#`  | protected       |
-| `~`  | package-private |
-| `+`  | public          |
+| `-`![](https://plantuml.com/img/private-field.png)  | private         |
+| `#` ![](https://plantuml.com/img/protected-field.png)| protected       |
+| `~` ![](https://plantuml.com/img/package-private-field.png) | package-private |
+| `+`  ![](https://plantuml.com/img/public-method.png)| public          |
 
 ---
 
