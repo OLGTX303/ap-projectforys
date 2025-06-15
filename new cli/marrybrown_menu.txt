@@ -1,0 +1,51 @@
+Chicken Burger,8.8
+Hotouch Burger,11.1
+Tower Burger,13.8
+Fish Fillet Burger,11.25
+Lucky Plate,11.9
+Chick-A-Licious,13.3
+Chick-A-Mix,11.9
+Fish 'n' Chips,13.9
+Nasi Marrybrown,9.9
+Nasi Ayam MB,10.3
+Mi Kari MB,9.5
+Chicken Porridge,6.5
+Seafood Porridge,7.5
+Buddy Meal,32.8
+Variety Combo,56.8
+Crispy Chicken 1 pc,3.75
+Crispy Chicken 2 pcs,7.5
+Crispy Chicken 3 pcs,11.25
+Crispy Chicken 5 pcs,18.55
+Crispy Chicken 7 pcs,33.0
+Crispy Chicken 9 pcs,37.5
+Crispy Chicken 15 pcs,53.75
+Chicken Nuggets,6.6
+Fish Nuggets,11.95
+Prawn Fingers,6.6
+Chicken Fillets,3.7
+Chick-A-Pops,6.6
+French Fries Regular,3.45
+French Fries Large,4.9
+Coleslaw,2.4
+Vegetable Salad,2.9
+Vegetable Crackers,3.7
+Mushroom Soup,2.0
+Mashed Potato,2.0
+MB Rice,2.0
+Cheese,1.0
+Kiddy Meal - Chicken Nuggets,9.9
+Kiddy Meal - Crispy Chicken,9.9
+Soft Drink,3.0
+Orange Juice,3.4
+Iced Milo,4.0
+Iced Lemon Tea,3.4
+Mineral Water,2.0
+White Coffee,3.25
+Hot Milo,3.25
+Hot Tea,2.25
+Hot Lemon Tea,3.25
+Hot Chocolate,3.25
+1 Scoop Ice Cream,3.0
+2 Scoops Ice Cream,5.0
+Sundae Cup,3.0
